@@ -6,6 +6,7 @@ $footer-height: theme('spacing.12');
 .page{
     min-height: 100vh;
     background: $page-background;
+    min-width: 320px;
 }
 // mobile first demo
 .content{
