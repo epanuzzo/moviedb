@@ -21,7 +21,6 @@ const Header: React.FC = () => {
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle search functionality here
     console.log('Search text', searchText);
   };
 
@@ -30,7 +29,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gray-900 text-white py-4 px-8  border-solid border-b border-slate-300">
+    <header className="bg-gray-900 text-white py-4 px-8 border-solid border-b border-slate-300">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <TbMovie className="w-7 h-7 text-white opacity-30" />
