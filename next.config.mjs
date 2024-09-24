@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['resizing.flixster.com'],
+    domains: ['www.cinematerial.com'],
   },
 };
 
