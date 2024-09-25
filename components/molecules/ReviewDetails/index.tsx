@@ -1,6 +1,6 @@
 import React from "react";
 
-type ReviewDetailsProps = {
+export type ReviewDetailsProps = {
   user: string;
   rating: number;
   comment: string;

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import YearCircle from "@/components/atoms/YearCircle";
+import YearCircle from "@/components/atoms/Rating";
 import BlockTitle from "@/components/atoms/BlockTitle";
 import MovieInfo from "@/components/molecules/MovieInfo";
 import ActorDetails, {
