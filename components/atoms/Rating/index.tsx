@@ -1,11 +1,11 @@
 import React from "react";
 
-type YearCircleProps = {
+type RatingProps = {
   isLarge?: boolean;
   text: number | string;
 };
 
-const YearCircle: React.FC<YearCircleProps> = ({ isLarge = false, text }) => {
+const Rating: React.FC<RatingProps> = ({ isLarge = false, text }) => {
   const size = isLarge ? "w-12 h-12" : "w-10 h-10";
   return (
     <div
@@ -16,4 +16,4 @@ const YearCircle: React.FC<YearCircleProps> = ({ isLarge = false, text }) => {
   );
 };
 
-export default YearCircle;
+export default Rating;
