@@ -19,14 +19,14 @@ const SearchBar: React.FC<SearchBarProps> = ({
       className={`relative ${wrapperClassName}`}
     >
       <input
-        type="email"
+        type="text"
         onChange={handleSearchChange}
         className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-10 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
         placeholder={placeholder}
       />
       <button
         className="absolute right-1 top-1 rounded bg-slate-800 p-1.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-        type="button"
+        type="submit"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
