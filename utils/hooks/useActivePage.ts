@@ -1,11 +1,11 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const useActivePage = () => {
-    const router = useRouter();
-    const activePage = router.pathname;
-    const queryParams = router.query;
+  const router = useRouter();
+  const activePage = router.pathname;
+  const queryParams = router.query;
 
-    return { activePage, queryParams };
+  return { activePage, queryParams };
 };
 
 export default useActivePage;

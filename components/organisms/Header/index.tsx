@@ -1,15 +1,14 @@
-import MenuIcon from '@/components/atoms/MenuIcon';
-import MenuItems from '@/components/molecules/MenuItems';
-import SearchBar from '@/components/molecules/SearchBar';
-import React, { useState } from 'react';
+import MenuIcon from "@/components/atoms/MenuIcon";
+import MenuItems from "@/components/molecules/MenuItems";
+import SearchBar from "@/components/molecules/SearchBar";
+import React, { useState } from "react";
 import { TbMovie } from "react-icons/tb";
 import useIsMobile from "@/utils/hooks/useIsMobile";
-import useActivePage from '@/utils/hooks/useActivePage';
+import useActivePage from "@/utils/hooks/useActivePage";
 import { slogan } from "@/utils/config";
 
-
 const Header: React.FC = () => {
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isMobile = useIsMobile();
@@ -21,7 +20,7 @@ const Header: React.FC = () => {
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Search text', searchText);
+    console.log("Search text", searchText);
   };
 
   const toggleMenu = () => {
@@ -42,15 +41,15 @@ const Header: React.FC = () => {
             handleSearchChange={handleSearchChange}
           />
         )}
-        {isMobile && (
-          <MenuIcon
-            toggleMenu={toggleMenu}
-          />
-        )}
+        {isMobile && <MenuIcon toggleMenu={toggleMenu} />}
       </div>
       {isMobile && (
         <div className="mt-4">
-          <MenuItems active={activePage} isMobile wrapperClassName={`${isMenuOpen ? 'block mb-4' : 'hidden'}`} />
+          <MenuItems
+            active={activePage}
+            isMobile
+            wrapperClassName={`${isMenuOpen ? "block mb-4" : "hidden"}`}
+          />
           <SearchBar
             handleSearchSubmit={handleSearchSubmit}
             handleSearchChange={handleSearchChange}
