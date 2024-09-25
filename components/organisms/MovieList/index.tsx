@@ -21,7 +21,7 @@ const MovieList: React.FC = () => {
         <MovieCard
           id={movie.id}
           title={movie.title}
-          year={movie.vote_average}
+          rating={movie.vote_average}
           image={imageUrl + movie.poster_path}
           missingImage={!movie.poster_path}
           key={movie.title}

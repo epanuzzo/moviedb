@@ -15,6 +15,10 @@ export const fetchMovies = async (page?: number) => {
   });
 };
 
+export const fetchMovieDetails = async (id: number) => {
+  return await movieDBInstance.get(`/movie/${id}`);
+};
+
 // export const searchMovies = async (query: string) => {
 //   return await movieDBInstance.get(`/discover/movie`, {
 //     params: { query },

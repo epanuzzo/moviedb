@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import YearCircle from "@/components/atoms/Rating";
+import Rating from "@/components/atoms/Rating";
 
-type MenuItemsProps = {
+type MovieCardProps = {
   id: number;
   title: string;
   image: string;
-  year: string | number;
+  rating: string | number;
   missingImage?: boolean;
 };
 
-const MenuItems: React.FC<MenuItemsProps> = ({
+const MovieCard: React.FC<MovieCardProps> = ({
   id,
   title,
   image,
-  year,
+  rating,
   missingImage,
 }) => {
   return (
@@ -39,9 +39,9 @@ const MenuItems: React.FC<MenuItemsProps> = ({
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
         <h3 className="text-lg font-semibold text-white">{title}</h3>
       </div>
-      <YearCircle text={year} />
+      <Rating text={rating} />
     </Link>
   );
 };
 
-export default MenuItems;
+export default MovieCard;

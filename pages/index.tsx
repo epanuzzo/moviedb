@@ -13,8 +13,11 @@ const HomePage: React.FC = () => {
   );
 
   useEffect(() => {
-    dispatch(getMovies());
-  }, []);
+    // TODO: Fix rerendering issue
+    if (!movies.length) {
+      dispatch(getMovies());
+    }
+  }, [dispatch, movies]);
 
   return (
     <div className="w-full h-full">
