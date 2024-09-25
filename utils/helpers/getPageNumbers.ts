@@ -1,4 +1,8 @@
-const getPageNumbers = (currentPage: number, totalPages: number, maxVisiblePages: number): (number | string)[] => {
+const getPageNumbers = (
+  currentPage: number,
+  totalPages: number,
+  maxVisiblePages: number
+): (number | string)[] => {
   const pages = [];
   if (totalPages <= maxVisiblePages) {
     for (let i = 1; i <= totalPages; i++) {
@@ -14,15 +18,21 @@ const getPageNumbers = (currentPage: number, totalPages: number, maxVisiblePages
     let endPage = Math.min(totalPages - 1, currentPage + visiblePagesAfter);
 
     if (currentPage - visiblePagesBefore <= 1) {
-      endPage = Math.min(totalPages - 1, endPage + (visiblePagesBefore - (currentPage - 2)));
+      endPage = Math.min(
+        totalPages - 1,
+        endPage + (visiblePagesBefore - (currentPage - 2))
+      );
     }
 
     if (currentPage + visiblePagesAfter >= totalPages) {
-      startPage = Math.max(2, startPage - ((currentPage + visiblePagesAfter) - totalPages + 1));
+      startPage = Math.max(
+        2,
+        startPage - (currentPage + visiblePagesAfter - totalPages + 1)
+      );
     }
 
     if (startPage > 2) {
-      pages.push('...');
+      pages.push("...");
     }
 
     for (let i = startPage; i <= endPage; i++) {
@@ -30,7 +40,7 @@ const getPageNumbers = (currentPage: number, totalPages: number, maxVisiblePages
     }
 
     if (endPage < totalPages - 1) {
-      pages.push('...');
+      pages.push("...");
     }
 
     pages.push(totalPages);
@@ -39,4 +49,4 @@ const getPageNumbers = (currentPage: number, totalPages: number, maxVisiblePages
   return pages;
 };
 
-  export default getPageNumbers;
+export default getPageNumbers;
