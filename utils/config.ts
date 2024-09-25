@@ -8,6 +8,7 @@ export const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
 export const apiToken = process.env.NEXT_PUBLIC_TMDB_API_TOKEN;
 export const apiUrl = "https://api.themoviedb.org/3/";
 export const imageUrl = "https://image.tmdb.org/t/p/w500";
+export const imageOriginalUrl = "https://image.tmdb.org/t/p/original";
 
 export const movieDBInstance = axios.create({
   baseURL: apiUrl,
