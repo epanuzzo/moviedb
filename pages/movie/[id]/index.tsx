@@ -6,6 +6,29 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+/**
+ * MoviePage component is responsible for displaying the details of a specific movie.
+ * It fetches the movie details based on the movie ID from the URL query parameters.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered component.
+ *
+ * @remarks
+ * - Utilizes `useRouter` from Next.js to access the movie ID from the URL.
+ * - Uses `useDispatch` and `useSelector` from Redux to manage state and dispatch actions.
+ * - Fetches movie details if not already available in the state.
+ * - Displays a loading indicator while fetching data.
+ * - Shows a "Movie not found" message if the movie ID is invalid or the movie is not found.
+ *
+ * @example
+ * ```tsx
+ * import MoviePage from 'path/to/MoviePage';
+ *
+ * const App = () => (
+ *   <MoviePage />
+ * );
+ * ```
+ */
 const MoviePage: React.FC = () => {
   const router = useRouter();
   const { id } = router.query;

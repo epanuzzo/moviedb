@@ -78,6 +78,35 @@ export const searchMovieByName = createAsyncThunk(
   }
 );
 
+/**
+ * Slice for managing movie-related state in the Redux store.
+ *
+ * @constant
+ * @name movieSlice
+ *
+ * @description
+ * This slice handles the state for movies, including fetching movie lists,
+ * movie details, and searching movies by name. It uses extra reducers to handle
+ * asynchronous actions related to movies.
+ *
+ * @property {string} name - The name of the slice.
+ * @property {object} initialState - The initial state of the slice.
+ * @property {object} reducers - An empty object for defining synchronous reducers.
+ * @property {function} extraReducers - A function that defines how the slice handles
+ *                                      asynchronous actions using a builder.
+ *
+ * @example
+ * // Example usage:
+ * import { movieSlice } from './redux/slices/movieSlice';
+ *
+ * // Access the reducer
+ * const movieReducer = movieSlice.reducer;
+ *
+ * // Dispatch actions
+ * dispatch(getMovies());
+ * dispatch(getMovieDetails(movieId));
+ * dispatch(searchMovieByName(movieName));
+ */
 const movieSlice = createSlice({
   name: "movie",
   initialState,

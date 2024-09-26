@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItems renders component 1`] = `
+<nav
+  className="hidden md:flex space-x-4 pl-4 "
+>
+  <a
+    className="text-1xl underline"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    Home
+  </a>
+  <a
+    className="text-1xl "
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    About
+  </a>
+</nav>
+`;
+
+exports[`MenuItems renders component with alt props 1`] = `
+<nav
+  className="flex md:hidden flex-col space-y-4 pt-4 test-class"
+>
+  <a
+    className="text-1xl underline"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    Home
+  </a>
+  <a
+    className="text-1xl "
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    About
+  </a>
+</nav>
+`;

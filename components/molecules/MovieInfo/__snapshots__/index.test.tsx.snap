@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieInfo renders component 1`] = `
+<p>
+  <span
+    className="font-semibold"
+  >
+    Name
+    :
+  </span>
+   
+  Child
+</p>
+`;

@@ -7,6 +7,17 @@ export type ReviewDetailsProps = {
   date: string;
 };
 
+/**
+ * ReviewDetails component displays the details of a movie review.
+ *
+ * @component
+ * @param {ReviewDetailsProps} props - The properties object.
+ * @param {string} props.user - The name of the user who wrote the review.
+ * @param {number} props.rating - The rating given by the user, out of 10.
+ * @param {string} props.comment - The comment provided by the user.
+ * @param {string} props.date - The date when the review was written.
+ * @returns {JSX.Element} The rendered component displaying the review details.
+ */
 const ReviewDetails: React.FC<ReviewDetailsProps> = ({
   user,
   rating,

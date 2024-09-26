@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails renders the component 1`] = `
+<div
+  className="bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto"
+>
+  <div
+    className="mb-6"
+  >
+    <a
+      className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-md"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      ← Back to Movies list
+    </a>
+  </div>
+  <div
+    className="relative w-full h-80 bg-cover bg-center rounded-lg overflow-hidden"
+    style={
+      {
+        "backgroundImage": "url(https://image.tmdb.org/t/p/originalundefined)",
+      }
+    }
+  >
+    <div
+      className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90"
+    />
+    <div
+      className="absolute top-4 left-4 bg-white text-black rounded-full flex items-center justify-center w-12 h-12"
+    >
+      <p
+        className="text-sm font-bold"
+      />
+    </div>
+  </div>
+  <div
+    className="mt-6"
+  >
+    <h1
+      className="text-4xl font-bold"
+    >
+      Movie 1
+    </h1>
+    <p
+      className="text-gray-400 italic"
+    />
+    <p
+      className="mt-4 text-lg"
+    />
+  </div>
+  <div
+    className="mt-4 space-y-2"
+  >
+    <p>
+      <span
+        className="font-semibold"
+      >
+        Production
+        :
+      </span>
+       
+      Mock
+    </p>
+    <p>
+      <span
+        className="font-semibold"
+      >
+        Genres
+        :
+      </span>
+       
+      <span
+        className="inline-block bg-gray-800 rounded-full px-3 py-1 text-sm mr-2 my-2"
+      >
+        Action
+      </span>
+    </p>
+  </div>
+  <div
+    className="mt-6"
+  >
+    <h3
+      className="text-2xl font-semibold mb-4"
+    >
+      Cast
+    </h3>
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 gap-4"
+    >
+      <div
+        className="flex items-center space-x-3"
+      >
+        <div
+          className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white"
+        >
+          A
+        </div>
+        <div>
+          <p
+            className="font-semibold"
+          >
+            Actor 1
+          </p>
+          <p
+            className="text-gray-400 text-sm"
+          >
+            as 
+            Role 1
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mt-6"
+  >
+    <h3
+      className="text-2xl font-semibold mb-4"
+    >
+      User Reviews
+    </h3>
+    <div
+      className="bg-gray-800 p-4 rounded-lg mb-4"
+    >
+      <div
+        className="flex justify-between"
+      >
+        <p
+          className="font-semibold"
+        >
+          name
+        </p>
+        <p
+          className="text-sm"
+        >
+          5
+           / 10
+        </p>
+      </div>
+      <p
+        className="text-gray-400 mt-2"
+      >
+        comment
+      </p>
+      <p
+        className="text-xs text-gray-500 mt-2"
+      >
+        01/09/2021
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MovieDetails renders the component with no movie 1`] = `null`;

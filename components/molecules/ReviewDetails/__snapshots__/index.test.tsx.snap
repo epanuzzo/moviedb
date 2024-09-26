@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewDetails renders component 1`] = `
+<div
+  className="bg-gray-800 p-4 rounded-lg mb-4"
+>
+  <div
+    className="flex justify-between"
+  >
+    <p
+      className="font-semibold"
+    >
+      User
+    </p>
+    <p
+      className="text-sm"
+    >
+      5
+       / 10
+    </p>
+  </div>
+  <p
+    className="text-gray-400 mt-2"
+  >
+    Comment
+  </p>
+  <p
+    className="text-xs text-gray-500 mt-2"
+  >
+    01/01/2021
+  </p>
+</div>
+`;

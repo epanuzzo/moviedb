@@ -6,6 +6,16 @@ export type MovieHeadingProps = {
   description: string;
 };
 
+/**
+ * MovieHeading component displays the main heading, tagline, and description of a movie.
+ *
+ * @component
+ * @param {Object} props - The properties object.
+ * @param {string} props.title - The title of the movie.
+ * @param {string} props.tagline - The tagline of the movie.
+ * @param {string} props.description - The description of the movie.
+ * @returns {JSX.Element} The rendered MovieHeading component.
+ */
 const MovieHeading: React.FC<MovieHeadingProps> = ({
   title,
   tagline,

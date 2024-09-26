@@ -6,6 +6,35 @@ import Pagination from "@/components/molecules/Pagination";
 import MovieList from "@/components/organisms/MovieList";
 import Loader from "@/components/atoms/Loader";
 
+/**
+ * HomePage component
+ *
+ * This is the main page component for the movie database application.
+ * It fetches and displays a list of movies from the 1990s.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered component.
+ *
+ * @remarks
+ * - Uses `useDispatch` to dispatch actions to the Redux store.
+ * - Uses `useSelector` to select state from the Redux store.
+ * - Fetches movies on initial render if the movie list is empty.
+ * - Displays a loading indicator while movies are being fetched.
+ * - Displays a list of movies and pagination controls if there are movies and multiple pages.
+ *
+ * @example
+ * ```tsx
+ * import HomePage from './pages/index';
+ *
+ * const App = () => (
+ *   <Provider store={store}>
+ *     <HomePage />
+ *   </Provider>
+ * );
+ *
+ * export default App;
+ * ```
+ */
 const HomePage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { movies, loading, pages, currentPage } = useSelector(

@@ -4,6 +4,15 @@ type MenuIconProps = {
   toggleMenu: () => void;
 };
 
+/**
+ * MenuIcon component renders a button with a hamburger menu icon.
+ * It is typically used to toggle the visibility of a menu in a responsive design.
+ *
+ * @component
+ * @param {MenuIconProps} props - The props for the MenuIcon component.
+ * @param {function} props.toggleMenu - The function to call when the button is clicked.
+ * @returns {JSX.Element} The rendered MenuIcon component.
+ */
 const MenuIcon: React.FC<MenuIconProps> = ({ toggleMenu }) => {
   return (
     <button className="ml-2 md:hidden text-white" onClick={toggleMenu}>

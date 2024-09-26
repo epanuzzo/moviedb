@@ -19,6 +19,27 @@ type MovieDetailsProps = {
   id: number;
 };
 
+/**
+ * Component to display detailed information about a specific movie.
+ *
+ * @component
+ * @param {MovieDetailsProps} props - The properties for the MovieDetails component.
+ * @param {number} props.id - The ID of the movie to display details for.
+ * @returns {JSX.Element | null} The JSX element for the movie details or null if the movie is not found.
+ *
+ * @example
+ * <MovieDetails id={123} />
+ *
+ * @remarks
+ * This component fetches movie details from the Redux store using the movie ID.
+ * It displays various information about the movie including title, tagline, overview,
+ * production companies, runtime, genres, cast, and user reviews.
+ *
+ * @requires
+ * - `useSelector` from 'react-redux' to access the Redux store.
+ * - `Link` from 'next/link' for navigation.
+ * - `Rating`, `MovieHeading`, `MovieInfo`, `Tag`, `BlockTitle`, `ActorDetails`, and `ReviewDetails` components for displaying movie details.
+ */
 const MovieDetails: React.FC<MovieDetailsProps> = ({ id }) => {
   const { moviesDetails } = useSelector((state: RootState) => state.movie);
 

@@ -1,3 +1,14 @@
+/**
+ * Generates an array of page numbers to be displayed in a pagination component.
+ * The array includes the current page, the first and last pages, and a set of pages
+ * around the current page. If the number of pages exceeds the maximum visible pages,
+ * ellipses ("...") are used to indicate skipped pages.
+ *
+ * @param currentPage - The current active page.
+ * @param totalPages - The total number of pages.
+ * @param maxVisiblePages - The maximum number of visible pages in the pagination component.
+ * @returns An array of page numbers and ellipses to be displayed.
+ */
 const getPageNumbers = (
   currentPage: number,
   totalPages: number,
