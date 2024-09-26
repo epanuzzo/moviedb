@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActorDetails renders component 1`] = `
+<div
+  className="flex items-center space-x-3"
+>
+  <div
+    className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white"
+  >
+    J
+  </div>
+  <div>
+    <p
+      className="font-semibold"
+    >
+      John
+    </p>
+    <p
+      className="text-gray-400 text-sm"
+    >
+      as 
+      Actor
+    </p>
+  </div>
+</div>
+`;

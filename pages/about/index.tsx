@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * A functional component that displays information about the website.
+ *
+ * @returns A styled `div` containing details about the website, including a disclaimer about TMDB and a welcome message.
+ */
 const AboutText: React.FC = () => {
   return (
     <div className="bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg max-w-3xl mx-auto mt-8 mb-8">

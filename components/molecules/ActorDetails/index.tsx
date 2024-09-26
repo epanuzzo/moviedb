@@ -5,6 +5,15 @@ export type ActorDetailsProps = {
   role: string;
 };
 
+/**
+ * Component to display actor details including their name and role.
+ *
+ * @component
+ * @param {ActorDetailsProps} props - The properties for the component.
+ * @param {string} props.name - The name of the actor.
+ * @param {string} props.role - The role of the actor.
+ * @returns {JSX.Element} A JSX element displaying the actor's initial, name, and role.
+ */
 const ActorDetails: React.FC<ActorDetailsProps> = ({ name, role }) => {
   return (
     <div key={name} className="flex items-center space-x-3">

@@ -13,6 +13,21 @@ type MenuItemsProps = {
   menuItems?: MenuItemProps[];
 };
 
+/**
+ * MenuItems component renders a navigation menu with a list of links.
+ * It supports both mobile and desktop layouts and highlights the active link.
+ *
+ * @param {MenuItemsProps} props - The properties for the MenuItems component.
+ * @param {boolean} props.active - The URL of the currently active menu item.
+ * @param {boolean} [props.isMobile=false] - Flag to determine if the menu should be displayed in mobile layout.
+ * @param {string} [props.wrapperClassName=""] - Additional class names for the wrapper element.
+ * @param {Array<MenuItemProps>} [props.menuItems=[
+ *   { url: "/", text: "Home" },
+ *   { url: "/about", text: "About" },
+ * ]] - Array of menu items to be displayed.
+ *
+ * @returns {JSX.Element} The rendered navigation menu.
+ */
 const MenuItems: React.FC<MenuItemsProps> = ({
   active,
   isMobile = false,

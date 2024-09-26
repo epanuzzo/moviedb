@@ -11,6 +11,20 @@ type MovieCardProps = {
   missingImage?: boolean;
 };
 
+/**
+ * MovieCard component displays a card with movie details.
+ * It includes an image, title, and rating. If the image is missing,
+ * it shows a placeholder with a message.
+ *
+ * @component
+ * @param {MovieCardProps} props - The properties for the MovieCard component.
+ * @param {string} props.id - The unique identifier for the movie.
+ * @param {string} props.title - The title of the movie.
+ * @param {string} props.image - The URL of the movie's image.
+ * @param {string} props.rating - The rating of the movie.
+ * @param {boolean} props.missingImage - Flag indicating if the image is missing.
+ * @returns {JSX.Element} The rendered MovieCard component.
+ */
 const MovieCard: React.FC<MovieCardProps> = ({
   id,
   title,

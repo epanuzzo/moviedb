@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating renders component 1`] = `
+<div
+  className="absolute top-4 left-4 bg-white text-black rounded-full flex items-center justify-center w-12 h-12"
+>
+  <p
+    className="text-sm font-bold"
+  >
+    test
+  </p>
+</div>
+`;
+
+exports[`Rating renders component with alt props 1`] = `
+<div
+  className="absolute top-4 left-4 bg-white text-black rounded-full flex items-center justify-center w-10 h-10"
+>
+  <p
+    className="text-sm font-bold"
+  >
+    test
+  </p>
+</div>
+`;

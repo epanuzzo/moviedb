@@ -11,6 +11,39 @@ import { useDispatch } from "react-redux";
 import { debounce } from "@/utils/helpers/debounce";
 import { searchMovieByName } from "@/redux/slices/movieSlice";
 
+/**
+ * Header component that displays the main navigation and search bar.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered header component.
+ *
+ * @remarks
+ * This component uses various hooks and state to manage the search functionality,
+ * menu toggle for mobile view, and active page highlighting.
+ *
+ * @example
+ * ```tsx
+ * <Header />
+ * ```
+ *
+ * @hook
+ * - `useDispatch` to dispatch actions to the Redux store.
+ * - `useState` to manage local state for search text and menu toggle.
+ * - `useIsMobile` to determine if the view is on a mobile device.
+ * - `useActivePage` to get the currently active page.
+ * - `useCallback` to debounce the search input changes.
+ *
+ * @function handleSearchChange
+ * Debounces the search input changes and updates the search text state.
+ *
+ * @function handleSearchSubmit
+ * Submits the search form and dispatches the search action with the search text.
+ *
+ * @function toggleMenu
+ * Toggles the mobile menu open and closed.
+ *
+ * @returns {JSX.Element} The rendered header component.
+ */
 const Header: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [searchText, setSearchText] = useState("");
