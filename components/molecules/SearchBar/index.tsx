@@ -7,6 +7,18 @@ type SearchBarProps = {
   wrapperClassName?: string;
 };
 
+/**
+ * SearchBar component renders a search input field with a submit button.
+ *
+ * @component
+ * @param {Object} props - The props object.
+ * @param {function} props.handleSearchSubmit - Function to handle form submission.
+ * @param {function} props.handleSearchChange - Function to handle input change.
+ * @param {string} [props.placeholder="Enter your text"] - Placeholder text for the input field.
+ * @param {string} [props.wrapperClassName=""] - Additional class names for the form wrapper.
+ *
+ * @returns {JSX.Element} The rendered search bar component.
+ */
 const SearchBar: React.FC<SearchBarProps> = ({
   handleSearchSubmit,
   handleSearchChange,
