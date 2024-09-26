@@ -77,7 +77,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({ id }) => {
       />
 
       <div className="mt-4 space-y-2">
-        {movie.production_companies.length && (
+        {!!movie.production_companies.length && (
           <MovieInfo name="Production">
             {movie.production_companies[0].name}
           </MovieInfo>
@@ -85,7 +85,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = ({ id }) => {
         {movie.runtime && (
           <MovieInfo name="Duration">{`${movie.runtime} minutes`}</MovieInfo>
         )}
-        {movie.genres.length && (
+        {!!movie.genres.length && (
           <MovieInfo name="Genres">
             {movie.genres.map((genre: { id: number; name: string }) => (
               <Tag key={genre.id}>{genre.name}</Tag>
